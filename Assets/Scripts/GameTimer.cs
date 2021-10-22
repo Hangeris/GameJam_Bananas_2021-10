@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GameTimer : MonoBehaviour
 {
+    private float totalInGameTime;
+    
     private void OnEnable()
     {
         EventManager.OnGameStart += OnGameStart;
@@ -14,8 +16,24 @@ public class GameTimer : MonoBehaviour
         EventManager.OnGameStart -= OnGameStart;
     }
 
+    public float GetTotalInGameTime()
+    {
+        return totalInGameTime;
+    }
+    
     private void OnGameStart()
     {
-        Debug.Log("Game has been started.");
+        StartCoroutine(IncreaseDifficultyRoutine());
     }
+    
+    
+    IEnumerator IncreaseDifficultyRoutine()
+    {
+        while (true)
+        {
+            yield return null;
+            totalInGameTime += Time.time;
+        }
+    }
+    
 }
