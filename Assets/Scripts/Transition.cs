@@ -20,7 +20,7 @@ public class Transition : MonoBehaviour
         overlayImage.color = Color.clear;
     }
     
-    public static void Fade(float duration, Action afterFadeInAction)
+    public static void Fade(float duration, Action afterFadeInAction = null, Action afterFadeOutAction = null)
     {
         if (InTransition)
         {
@@ -28,16 +28,21 @@ public class Transition : MonoBehaviour
             return;
         }
 
-        instance.overlayImage.raycastTarget = true;
+        var _overlayImage = instance.overlayImage;
+        
+        _overlayImage.raycastTarget = true;
         InTransition = true;
 
-        LeanTween.color(instance.overlayImage.rectTransform, Color.black, duration / 2f).setOnComplete(() =>
+        LeanTween.color(_overlayImage.rectTransform, Color.black, duration / 2f).setOnComplete(() =>
         {
             afterFadeInAction?.Invoke();
-            LeanTween.color(instance.overlayImage.rectTransform, Color.clear, duration / 2f).setOnComplete(() =>
+            
+            LeanTween.color(_overlayImage.rectTransform, Color.clear, duration / 2f).setOnComplete(() =>
             {
                 InTransition = false;
-                instance.overlayImage.raycastTarget = false;
+                _overlayImage.raycastTarget = false;
+                
+                afterFadeOutAction?.Invoke();
             });
         });
     }
