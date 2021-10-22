@@ -213,3 +213,222 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 169769.089347 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ade7124563a0a5bb4fb5e7fd82f593d6') in 0.020048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.799107 seconds.
+  path: Assets/Scenes/GameScene.unity
+  artifactKey: Guid(9dcfdffc8084db24fbd7a3f765ac707e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GameScene.unity using Guid(9dcfdffc8084db24fbd7a3f765ac707e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7992869b26ce489b7cc54d2e531d328d') in 0.006310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.432894 seconds.
+  path: Assets/Scenes/SampleScene 1.unity
+  artifactKey: Guid(a813276072a950d4eb7b779fab1dcc1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene 1.unity using Guid(a813276072a950d4eb7b779fab1dcc1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5a9126749328db57bd46653bdaf5f3') in 0.006360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.733484 seconds.
+  path: Assets/Scenes/GameScene.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GameScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfbed4a40eb5e2fdd0b7414d34f2f72d') in 0.002509 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.240016 seconds.
+  path: Assets/Scenes/MenuScene.unity
+  artifactKey: Guid(a813276072a950d4eb7b779fab1dcc1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MenuScene.unity using Guid(a813276072a950d4eb7b779fab1dcc1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013adadea7189d9cd8e343344fee58de') in 0.006135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 68.095303 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31858aa9811287a817ef9c584839beb1') in 0.006454 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.585419 seconds.
+  path: Assets/Font
+  artifactKey: Guid(3a95b54ae37608943b5f3bc2f96b9ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font using Guid(3a95b54ae37608943b5f3bc2f96b9ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47cd14bb337857b96472663dbc3721d') in 0.006305 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.699524 seconds.
+  path: Assets/Font/Delight Candles .ttf
+  artifactKey: Guid(eaf85260e3f74094dbd5682e602cc0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Delight Candles .ttf using Guid(eaf85260e3f74094dbd5682e602cc0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f085e68cae674bf336e1a88a4d05b05') in 0.187974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.372538 seconds.
+  path: Assets/Font/Delight Candles  SDF.asset
+  artifactKey: Guid(37a39da8fc9c90748b0d78b3c136d956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Delight Candles  SDF.asset using Guid(37a39da8fc9c90748b0d78b3c136d956) Importer(815301076,1909f56bfc062723c751e8b465ee728b) UnassignedReferenceException: The variable material of TMP_FontAsset has not been assigned.
+You probably need to assign the material variable of the TMP_FontAsset script in the inspector.
+  at (wrapper managed-to-native) UnityEngine.Material.HasProperty(UnityEngine.Material,int)
+  at TMPro.TMP_FontAsset.ReadFontAssetDefinition () [0x000a9] in C:\_UnityProjects\Personal\GameJam_Bananas_2021-10\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_FontAsset.cs:588 
+  at TMPro.TMP_FontAsset.OnValidate () [0x00019] in C:\_UnityProjects\Personal\GameJam_Bananas_2021-10\Library\PackageCache\com.unity.textmeshpro@3.0.6\Scripts\Runtime\TMP_FontAsset.cs:555 
+
+(Filename: Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs Line: 588)
+
+ -> (artifact id: '1512b1879aab17ad2e7ece7a4e898b9d') in 0.021399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.327447 seconds.
+  path: Assets/Font/Delight Candles  SDF.asset
+  artifactKey: Guid(37a39da8fc9c90748b0d78b3c136d956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Delight Candles  SDF.asset using Guid(37a39da8fc9c90748b0d78b3c136d956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fdb10062e7d48154bdb0f37ec1c34b0') in 0.010902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 97.860402 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f7983eb8ab45e8ee94fca240766137') in 0.053628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.574142 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c23a54ab821b6699f0a9272fa3658de5') in 0.024453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 81.064656 seconds.
+  path: Assets/Font/Delight Candles  SDF.asset
+  artifactKey: Guid(37a39da8fc9c90748b0d78b3c136d956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Delight Candles  SDF.asset using Guid(37a39da8fc9c90748b0d78b3c136d956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cabb97901aa8cfb47061732a3aa3cae9') in 0.014843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.042876 seconds.
+  path: Assets/Font/Delight Candles  SDF2.asset
+  artifactKey: Guid(5ad6fb80f3de00749aad060a8df77f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Font/Delight Candles  SDF2.asset using Guid(5ad6fb80f3de00749aad060a8df77f13) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: 'cadb828329d2ee1dba2449a0c6dfbdc6') in 0.025165 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005457 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\_UnityProjects\Personal\GameJam_Bananas_2021-10\Library\PackageCache\com.unity.visualscripting@1.7.2\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\_UnityProjects\Personal\GameJam_Bananas_2021-10\Library\PackageCache\com.unity.visualscripting@1.7.2\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.015 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1015ms)
+		BeginReloadAssembly (141ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (808ms)
+			LoadAssemblies (66ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (175ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (401ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (276ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4973 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (1.0 MB). Loaded Objects now: 5741.
+Memory consumption went from 209.7 MB to 208.7 MB.
+Total: 3.993000 ms (FindLiveObjects: 0.365300 ms CreateObjectMapping: 0.249700 ms MarkObjects: 3.041600 ms  DeleteObjects: 0.335500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 196.249546 seconds.
+  path: Assets/Square.png
+  artifactKey: Guid(8b1a581ce37cb6f46acd92d898638160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Square.png using Guid(8b1a581ce37cb6f46acd92d898638160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b015b60d23a41dd8a5146b30520f0af1') in 0.051216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.890468 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(8a640b183c40c5f4bba26cddedafb04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(8a640b183c40c5f4bba26cddedafb04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f09f67d8dca7c8798515a2b0f1bf7692') in 0.002243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.744211 seconds.
+  path: Assets/Art
+  artifactKey: Guid(6e1243a2efb369a4c839299ed179a70d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art using Guid(6e1243a2efb369a4c839299ed179a70d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64c5a36262da388766c5578e9eba1fe7') in 0.005654 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.119092 seconds.
+  path: Assets/Art/UI
+  artifactKey: Guid(4c2f82d6e54dd9549a5456ce2d7304a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/UI using Guid(4c2f82d6e54dd9549a5456ce2d7304a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6e034dbe60d7af9e0df1c65f627a3bd') in 0.005823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.919712 seconds.
+  path: Assets/Art/UI/Square.png
+  artifactKey: Guid(44469c833f74975478c43135cb12f0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/UI/Square.png using Guid(44469c833f74975478c43135cb12f0ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6476d6b33f259058b3584c68fcdf2913') in 0.013187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.261691 seconds.
+  path: Assets/DownloadedPlugins/LeanTween/Examples/Textures/Dude2d.png
+  artifactKey: Guid(5f7fa9a7940a64e79b5a42d9f661d42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DownloadedPlugins/LeanTween/Examples/Textures/Dude2d.png using Guid(5f7fa9a7940a64e79b5a42d9f661d42c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2648e87129fe886acd1175e7ef3db70') in 0.018948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/DownloadedPlugins/LeanTween/Examples/Material/Futuro_WindowBack.psd
+  artifactKey: Guid(678c92572cc724845a460c87117f5353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DownloadedPlugins/LeanTween/Examples/Material/Futuro_WindowBack.psd using Guid(678c92572cc724845a460c87117f5353) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1e676737b47eb4e2720e5cfebf0b9aa') in 0.018609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/DownloadedPlugins/LeanTween/Examples/Material/Futuro_ButtonBack.psd
+  artifactKey: Guid(b3abce7efa3854a4cb1dd6b47f553027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DownloadedPlugins/LeanTween/Examples/Material/Futuro_ButtonBack.psd using Guid(b3abce7efa3854a4cb1dd6b47f553027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb011bf7ec30fc6c9706583b2f3d10a3') in 0.014358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/DownloadedPlugins/LeanTween/Examples/Material/Futoro_Ring.psd
+  artifactKey: Guid(ef31bc3f46d6047b29ff513e55daf05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DownloadedPlugins/LeanTween/Examples/Material/Futoro_Ring.psd using Guid(ef31bc3f46d6047b29ff513e55daf05b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2751730258d4c647e1645de82f77a5') in 0.019083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/DownloadedPlugins/LeanTween/Examples/Material/Futoro_PersonSprites.jpg
+  artifactKey: Guid(cea2c9bf87b0c4dfdafb697a3ff00959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DownloadedPlugins/LeanTween/Examples/Material/Futoro_PersonSprites.jpg using Guid(cea2c9bf87b0c4dfdafb697a3ff00959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b4a12320412c8ce35e1f54f7c19836') in 0.026830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/DownloadedPlugins/LeanTween/Examples/Material/Futuro_SineWave.psd
+  artifactKey: Guid(d835741a3c4a14a0aa5f7536c46456c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DownloadedPlugins/LeanTween/Examples/Material/Futuro_SineWave.psd using Guid(d835741a3c4a14a0aa5f7536c46456c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c361ed146b6ab65f3f39c921891f42') in 0.015845 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
