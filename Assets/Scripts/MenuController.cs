@@ -1,4 +1,5 @@
 using System;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,6 +20,10 @@ public class MenuController : MonoBehaviour
 
     public void BTN_ExitGame()
     {
+#if !UNITY_EDITOR
         Application.Quit();
+#else
+        EditorApplication.isPlaying = false;
+#endif
     }
 }

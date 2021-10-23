@@ -308,10 +308,10 @@ RectTransform:
   m_Father: {fileID: 1278420819}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 95.334625, y: -23.833694}
-  m_SizeDelta: {x: 178.8223, y: 44.7056}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 49.04}
+  m_SizeDelta: {x: 178.82227, y: 44.705597}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &27362684
 MonoBehaviour:
@@ -670,7 +670,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 114577725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 850ffb27e5b4149498791e48c1f24556, type: 3}
+  m_Script: {fileID: 11500000, guid: d59fdb7fa79ef4d87bee2faadcf88128, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114577728
@@ -1238,6 +1238,7 @@ GameObject:
   - component: {fileID: 235668794}
   - component: {fileID: 235668795}
   - component: {fileID: 235668796}
+  - component: {fileID: 235668797}
   m_Layer: 7
   m_Name: YellowDressAnimeGirl
   m_TagString: Player
@@ -1254,7 +1255,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 235668781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98f720df9ba0e4e28be4d8da3106b272, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c30e13de13f44a1a9907ae7425c8e31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
@@ -1262,6 +1263,10 @@ MonoBehaviour:
   movementSpeed: 5
   movementBounds: 3
   hurtAudioClip: {fileID: 8300000, guid: 1b280a189ae1e4ef1ab8fad675777e9d, type: 3}
+  hearts:
+  - {fileID: 522540961}
+  - {fileID: 363593155}
+  - {fileID: 199006934}
   OnPlayerDamaged:
     m_PersistentCalls:
       m_Calls: []
@@ -1736,6 +1741,20 @@ AudioReverbFilter:
   m_LFReference: 250
   m_ReflectionsDelay: 0
   m_ReverbPreset: 9
+--- !u!136 &235668797
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235668781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.7216499
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.7922834, z: 0}
 --- !u!1 &249881878
 GameObject:
   m_ObjectHideFlags: 0

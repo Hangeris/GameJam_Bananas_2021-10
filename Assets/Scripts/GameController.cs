@@ -3,35 +3,79 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
     public static Vector3 EnemyMoveDirection = -Vector3.forward;
-    
+    private float finishedGameTime;
+
+    private float[] bestTimes = new float[] { 0, 0, 0 };
+
     private void OnEnable()
     {
         EventManager.OnGameStart += OnGameStart;
+        EventManager.OnPlayerDie += BTN_TestDie;
     }
     private void OnDisable()
     {
         EventManager.OnGameStart -= OnGameStart;
+        EventManager.OnPlayerDie -= BTN_TestDie;
     }
 
     public void BTN_TestDie()
     {
-        Transition.Fade(1, () => SceneManager.LoadScene((int)SceneName.MenuScene), null);
+        finishedGameTime = FindObjectOfType<GameTimer>().GetTotalInGameTime();
+        SceneManager.sceneLoaded += ShowTime;
+        Transition.Fade(1, () => SceneManager.LoadScene((int)SceneName.GameOverScene), null);
     }
 
     IEnumerator Start()
     {
         yield return new WaitForSeconds(.5f);
-        EventManager.RequestGameStart();
     }
     
     private void OnGameStart()
     {
         
     }
-    
-    
+
+    private void ShowTime(Scene scene, LoadSceneMode mode)
+    {
+        SceneManager.sceneLoaded -= ShowTime;
+        TextMeshProUGUI gameOverUI = null;
+        var TMPUIs = GameObject.FindObjectsOfType<TextMeshProUGUI>();
+        foreach(var x in TMPUIs)
+        {
+            if(x.name == "EndText")
+            {
+                gameOverUI = x;
+                break;
+            }
+        }
+        gameOverUI.text = string.Format("Uh oh, looks like you went bananas\nYou survived for: {0:0.00} seconds\nBEST TIMES:\n{1:0.00}\n{2:0.00}\n{3:0.00}",
+            finishedGameTime, bestTimes[0], bestTimes[1], bestTimes[2]);
+
+        if(finishedGameTime > bestTimes[2])
+        {
+            if(finishedGameTime > bestTimes[1])
+            {
+                if(finishedGameTime > bestTimes[0])
+                {
+                    bestTimes[2] = bestTimes[1];
+                    bestTimes[1] = bestTimes[0];
+                    bestTimes[0] = finishedGameTime;
+                }
+                else
+                {
+                    bestTimes[2] = bestTimes[1];
+                    bestTimes[1] = finishedGameTime;
+                }
+            }
+            else
+            {
+                bestTimes[2] = finishedGameTime;
+            }
+        }
+    }
 }

@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     private float movementBounds;
     [SerializeField]
     private AudioClip hurtAudioClip;
+    [SerializeField] 
+    private List<GameObject> hearts;
 
     private float initialPosition;
 
@@ -64,9 +66,12 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.collider.CompareTag($"Obstacle"))
+        if(collision.collider.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
+            Debug.Log("Damaging player");
             DamagePlayer();
+            
+            collision.rigidbody.AddForce(-collision.contacts[0].normal * 100f, ForceMode.Impulse);
         }
     }
 
@@ -75,6 +80,7 @@ public class Player : MonoBehaviour
         health--;
         audioSource.PlayOneShot(hurtAudioClip);
         OnPlayerDamaged.Invoke(health);
+        hearts[health].SetActive(false);
 
         if (health <= -0)
         {
