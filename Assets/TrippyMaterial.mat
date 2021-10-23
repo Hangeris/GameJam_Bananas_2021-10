@@ -21,7 +21,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: TrippyMaterial
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 097b5ef2b4ad2462d959b797795b44d5,
+    type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -73,8 +74,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_feebdbca0d134f29a63aabaaeb167b67_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 68fbcc7a5b79e479e876112fe4c9a891, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D:
+        m_Texture: {fileID: 2800000, guid: b3abce7efa3854a4cb1dd6b47f553027, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _trippyTexture:
+        m_Texture: {fileID: 2800000, guid: c4c548a339b4d41a590928c0c98934a7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -94,6 +107,7 @@ Material:
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
+    - _CastShadows: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -108,6 +122,7 @@ Material:
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
+    - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
@@ -116,10 +131,16 @@ Material:
     - _SrcBlend: 1
     - _Surface: 0
     - _WorkflowMode: 1
+    - _ZTest: 4
     - _ZWrite: 1
+    - _ZWriteControl: 0
+    - _speed: 0.2
+    - _trippyOpacity: 0.64
+    - _trippySpeed: 0.1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.1268245, g: 0.3584906, b: 0.29629928, a: 0.24705882}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _trippyColor: {r: 0, g: 0.5377358, b: 0.513645, a: 1}
   m_BuildTextureStacks: []
