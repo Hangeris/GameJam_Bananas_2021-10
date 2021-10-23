@@ -234,6 +234,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: TinProp
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9af929e773ed64a9e8e3eb9e3c824020,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6618637953177238059, guid: 9af929e773ed64a9e8e3eb9e3c824020,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9af929e773ed64a9e8e3eb9e3c824020, type: 3}
 --- !u!4 &633888206519991392 stripped
