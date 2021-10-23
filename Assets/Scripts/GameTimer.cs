@@ -10,10 +10,12 @@ public class GameTimer : MonoBehaviour
     private void OnEnable()
     {
         EventManager.OnGameStart += OnGameStart;
+        EventManager.OnPlayerDie += OnPlayerDie;
     }
     private void OnDisable()
     {
         EventManager.OnGameStart -= OnGameStart;
+        EventManager.OnPlayerDie -= OnPlayerDie;
     }
 
     public float GetTotalInGameTime()
@@ -24,6 +26,11 @@ public class GameTimer : MonoBehaviour
     private void OnGameStart()
     {
         StartCoroutine(IncreaseDifficultyRoutine());
+    }
+    
+    private void OnPlayerDie()
+    {
+        StopAllCoroutines();
     }
     
     IEnumerator IncreaseDifficultyRoutine()

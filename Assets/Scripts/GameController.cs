@@ -53,29 +53,9 @@ public class GameController : MonoBehaviour
                 break;
             }
         }
-        gameOverUI.text = string.Format("Uh oh, looks like you went bananas\nYou survived for: {0:0.00} seconds\nBEST TIMES:\n{1:0.00}\n{2:0.00}\n{3:0.00}",
-            finishedGameTime, bestTimes[0], bestTimes[1], bestTimes[2]);
-
-        if(finishedGameTime > bestTimes[2])
-        {
-            if(finishedGameTime > bestTimes[1])
-            {
-                if(finishedGameTime > bestTimes[0])
-                {
-                    bestTimes[2] = bestTimes[1];
-                    bestTimes[1] = bestTimes[0];
-                    bestTimes[0] = finishedGameTime;
-                }
-                else
-                {
-                    bestTimes[2] = bestTimes[1];
-                    bestTimes[1] = finishedGameTime;
-                }
-            }
-            else
-            {
-                bestTimes[2] = finishedGameTime;
-            }
-        }
+        
+        gameOverUI.text = string.Format("Uh oh, looks like you went bananas\nYou survived for: {0:0.00} seconds", finishedGameTime);
+        
+ 
     }
 }

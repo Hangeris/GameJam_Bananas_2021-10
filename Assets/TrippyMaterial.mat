@@ -87,7 +87,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _trippyTexture:
-        m_Texture: {fileID: 2800000, guid: dffef66376be4fa480fb02b19edbe903, type: 3}
+        m_Texture: {fileID: 2800000, guid: 78e9e608c3c9d47a3b312c2908d10f46, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -135,7 +135,7 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     - _speed: 0.2
-    - _trippyOpacity: 0.02
+    - _trippyOpacity: 0.32
     - _trippySpeed: 0.1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
