@@ -391,6 +391,8 @@ MonoBehaviour:
   spawnableEnemies:
   - {fileID: 4028450989071511170, guid: 918a684a17ccb134986a03f5621331af, type: 3}
   - {fileID: 7598106065621585834, guid: 181b552a4ebf456409d38886cc5d2eb9, type: 3}
+  - {fileID: 6294527496514614484, guid: a6eb15078e36a7643a40e9502f999c2e, type: 3}
+  - {fileID: 9126519856211253875, guid: 7f08384efc6ff504faa4e3cc17f7f9bf, type: 3}
 --- !u!1 &2643344340313870699
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +740,8 @@ MonoBehaviour:
   spawnableEnemies:
   - {fileID: 4028450989071511170, guid: 918a684a17ccb134986a03f5621331af, type: 3}
   - {fileID: 7598106065621585834, guid: 181b552a4ebf456409d38886cc5d2eb9, type: 3}
+  - {fileID: 6294527496514614484, guid: a6eb15078e36a7643a40e9502f999c2e, type: 3}
+  - {fileID: 9126519856211253875, guid: 7f08384efc6ff504faa4e3cc17f7f9bf, type: 3}
 --- !u!33 &2643344340744808367
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -960,6 +964,7 @@ MonoBehaviour:
   spawnableEnemies:
   - {fileID: 4028450989071511170, guid: 918a684a17ccb134986a03f5621331af, type: 3}
   - {fileID: 1763270891, guid: a5d2970b9ebdfa64a9c63b3101d849d0, type: 3}
+  - {fileID: 2689511045592055036, guid: a90b4c1f7a7dfad43b1bfd87ea8c13bb, type: 3}
 --- !u!1 &2643344341376776621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1053,7 @@ MonoBehaviour:
   spawnableEnemies:
   - {fileID: 4028450989071511170, guid: 918a684a17ccb134986a03f5621331af, type: 3}
   - {fileID: 1763270891, guid: a5d2970b9ebdfa64a9c63b3101d849d0, type: 3}
+  - {fileID: 2689511045592055036, guid: a90b4c1f7a7dfad43b1bfd87ea8c13bb, type: 3}
 --- !u!1 &2643344341553018852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,6 +1102,7 @@ MonoBehaviour:
   spawnableEnemies:
   - {fileID: 4028450989071511170, guid: 918a684a17ccb134986a03f5621331af, type: 3}
   - {fileID: 7598106065621585834, guid: 181b552a4ebf456409d38886cc5d2eb9, type: 3}
+  - {fileID: 2689511045592055036, guid: a90b4c1f7a7dfad43b1bfd87ea8c13bb, type: 3}
 --- !u!1 &2643344341655211073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,6 +1151,7 @@ MonoBehaviour:
   spawnableEnemies:
   - {fileID: 4028450989071511170, guid: 918a684a17ccb134986a03f5621331af, type: 3}
   - {fileID: 1763270891, guid: a5d2970b9ebdfa64a9c63b3101d849d0, type: 3}
+  - {fileID: 6294527496514614484, guid: a6eb15078e36a7643a40e9502f999c2e, type: 3}
 --- !u!1 &3533748460570418890
 GameObject:
   m_ObjectHideFlags: 0
