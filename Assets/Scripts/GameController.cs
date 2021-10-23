@@ -20,6 +20,12 @@ public class GameController : MonoBehaviour
     {
         Transition.Fade(1, () => SceneManager.LoadScene((int)SceneName.MenuScene), null);
     }
+
+    IEnumerator Start()
+    {
+        yield return new WaitForSeconds(.5f);
+        EventManager.RequestGameStart();
+    }
     
     private void OnGameStart()
     {

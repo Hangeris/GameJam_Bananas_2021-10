@@ -26,13 +26,12 @@ public class GameTimer : MonoBehaviour
         StartCoroutine(IncreaseDifficultyRoutine());
     }
     
-    
     IEnumerator IncreaseDifficultyRoutine()
     {
         while (true)
         {
             yield return null;
-            totalInGameTime += Time.time;
+            totalInGameTime += Time.deltaTime;
         }
     }
     

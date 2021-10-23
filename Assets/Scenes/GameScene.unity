@@ -232,6 +232,7 @@ GameObject:
   - component: {fileID: 114577727}
   - component: {fileID: 114577728}
   - component: {fileID: 114577729}
+  - component: {fileID: 114577730}
   m_Layer: 0
   m_Name: Controllers
   m_TagString: Untagged
@@ -314,6 +315,70 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114577730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114577725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e190f429f6e74f4ea7657c2648a381a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawners:
+  - {fileID: 2102313608}
+  - {fileID: 1646196010}
+  - {fileID: 1091646521}
+  spawnProbabilityByDifficultyCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.2000122
+      inSlope: 0.7999878
+      outSlope: 0.7999878
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.7999878
+      outSlope: 0.7999878
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spawnFrequencyByDifficultyCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 2
+      value: 1
+      inSlope: 0.2906594
+      outSlope: 0.2906594
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.07543081
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &295686757
 GameObject:
   m_ObjectHideFlags: 0
@@ -327,7 +392,7 @@ GameObject:
   - component: {fileID: 295686760}
   - component: {fileID: 295686759}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Temp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -842,7 +907,7 @@ GameObject:
   - component: {fileID: 949323899}
   - component: {fileID: 949323898}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Temp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -942,7 +1007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1091646521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,7 +1020,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874e7f6e20f54064e8daeef6b5b35c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnableEnemies: []
+  spawnableEnemies:
+  - {fileID: 5314815931876669012, guid: 5c539c500dfa24b4586a4dfe4e775d4b, type: 3}
+  - {fileID: 8017851775641201213, guid: d18d32e977300594082f6ae6aaa9ae25, type: 3}
 --- !u!4 &1091646522
 Transform:
   m_ObjectHideFlags: 0
@@ -1086,7 +1153,7 @@ GameObject:
   - component: {fileID: 1508351384}
   - component: {fileID: 1508351383}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Temp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1435,7 +1502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2102313607
 Transform:
   m_ObjectHideFlags: 0
@@ -1464,4 +1531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 874e7f6e20f54064e8daeef6b5b35c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnableEnemies: []
+  spawnableEnemies:
+  - {fileID: 5314815931876669012, guid: 5c539c500dfa24b4586a4dfe4e775d4b, type: 3}
+  - {fileID: 8017851775641201213, guid: d18d32e977300594082f6ae6aaa9ae25, type: 3}
