@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 2262222267828173160}
   - component: {fileID: 6802659822229041773}
   - component: {fileID: 4572880511053127907}
+  - component: {fileID: -1919774713425330420}
   m_Layer: 0
   m_Name: EnemyBanana
   m_TagString: Untagged
@@ -187,3 +188,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 20
+--- !u!114 &-1919774713425330420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5314815931876669014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ea639bb43a97e43af9604842dfce30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleUpDuration: 1
+  easeTypes: 060000001e00000018000000
