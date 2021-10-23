@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public static class Extensions
@@ -74,6 +75,18 @@ public static class Extensions
         int random = UnityEngine.Random.Range(-amount, amount + 1);
         value = Mathf.Clamp(value + random, minClamp, maxClamp);
         return value;
+    }
+    
+    public static T GetRandom<T>(this List<T> list)
+    {
+        if (list != null && list.Count > 0)
+        {
+            return list[UnityEngine.Random.Range(0, list.Count)];
+        }
+        else
+        {
+            return default;
+        }
     }
     
 }

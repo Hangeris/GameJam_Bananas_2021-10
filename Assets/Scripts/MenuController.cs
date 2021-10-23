@@ -1,10 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
+    private void Awake()
+    {
+        EventManager.ResetAllEvents();
+    }
+
     public void BTN_StartGame()
     {
         Transition.Fade(
