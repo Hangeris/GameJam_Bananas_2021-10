@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 7a1a5ce9be85a4039b6e3e7b4dc3953c,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -3448,7 +3449,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b341edfff906b48c59359d86100f48a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3671,7 +3672,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b341edfff906b48c59359d86100f48a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4289,7 +4290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e59b20c2d4714f05bc9f1aeb00c8bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundMoveSpeed: 10
+  groundMoveSpeed: 5
   chunkResetPointOffset: 0
   groundChunks:
   - {fileID: 944370595}
@@ -4729,6 +4730,21 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 81666507621218435, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 81666507621218463, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 81666507832325732, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 81666507832325734, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
         type: 3}
       propertyPath: m_CastShadows
@@ -4774,20 +4790,40 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 81666508047066783, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 81666508456500576, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 81666508456500576, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: -35
+      objectReference: {fileID: 0}
     - target: {fileID: 81666508456500576, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.46
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 81666508456500576, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.7
       objectReference: {fileID: 0}
     - target: {fileID: 81666508456500576, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.8
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 81666508456500576, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5785697
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 81666508456500576, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
         type: 3}
@@ -4797,7 +4833,7 @@ PrefabInstance:
     - target: {fileID: 81666508456500576, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.815633
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 81666508456500576, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
         type: 3}
@@ -4807,11 +4843,16 @@ PrefabInstance:
     - target: {fileID: 81666508456500576, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 109.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 81666508456500606, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
         type: 3}
       propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 81666509010523109, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 81666509010523111, guid: 3e2ad2ee9ed0f49fdb6c7df330169d63,
@@ -5281,8 +5322,8 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
-  m_Antialiasing: 0
+  m_RenderPostProcessing: 1
+  m_Antialiasing: 2
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -7068,7 +7109,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b341edfff906b48c59359d86100f48a2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

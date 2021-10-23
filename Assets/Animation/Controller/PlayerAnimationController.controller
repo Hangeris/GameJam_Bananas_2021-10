@@ -310,7 +310,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 0e7e3e9dcb13e4941b5410629e42bd51,
+  m_Motion: {fileID: -203655887218126122, guid: 83eec472228ce4409ad38c6fd435d4a2,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -376,7 +376,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Left-Right
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -3769535534654503378}

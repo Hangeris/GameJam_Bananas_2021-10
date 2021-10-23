@@ -13,12 +13,15 @@ public class Player : MonoBehaviour
     private float movementSpeed;
     [SerializeField]
     private float movementBounds;
+    [SerializeField]
+    private AudioClip hurtAudioClip;
 
     private float initialPosition;
 
     public UnityEvent<int> OnPlayerDamaged;
 
     private Animator anim;
+    private AudioSource audioSource;
     
     private static readonly int IsStrafing = Animator.StringToHash("IsStrafing");
     private static readonly int Direction = Animator.StringToHash("Direction");
@@ -26,6 +29,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         OnPlayerDamaged = new UnityEvent<int>();
         initialPosition = gameObject.transform.position.x;
         health = maxHealth;
@@ -69,6 +73,7 @@ public class Player : MonoBehaviour
     private void DamagePlayer()
     {
         health--;
+        audioSource.PlayOneShot(hurtAudioClip);
         OnPlayerDamaged.Invoke(health);
     }
 }

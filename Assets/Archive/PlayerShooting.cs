@@ -14,6 +14,10 @@ public class PlayerShooting : MonoBehaviour
     private GameObject bullet;
     [SerializeField]
     private Transform shootingPos;
+    [SerializeField]
+    private AudioClip[] audioClips;
+
+    private AudioSource audioSource;
     private Animator anim;
     private bool shoot = false;
 
@@ -23,6 +27,7 @@ public class PlayerShooting : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -61,8 +66,10 @@ public class PlayerShooting : MonoBehaviour
             var shootVector = Camera.main.ScreenToWorldPoint(mousePos);
             //
 
-            rb.AddForce(shootVector * shotForce);
+            rb.AddForce((shootVector - shootingPos.transform.position) * shotForce);
             rb.AddTorque(new Vector3(10000f, 0 ,0), ForceMode.Force);
+            int audioClipIndex = Random.Range(0, audioClips.Length);
+            audioSource.PlayOneShot(audioClips[audioClipIndex]);
             
             Destroy(shot, 3f);
         }
