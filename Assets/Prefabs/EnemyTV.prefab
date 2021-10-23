@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 4229093895095730975}
-  moveSpeed: 50
+  moveSpeed: 60
 --- !u!54 &4229093895095730975
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb63c7d8b24a3b468c2e3c3d9575762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 15
+  duration: 12
 --- !u!114 &-1042278851418431116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ebc3daaf4a2a0a4bb87b659f7dacc4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxVelocity: 2.5
+  maxVelocity: 3
 --- !u!1001 &4229093895623123763
 PrefabInstance:
   m_ObjectHideFlags: 0
