@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class SpinRandom : MonoBehaviour
 {
+    [SerializeField] private float rotationSpeed = 1;
     private Vector3 randomVectorRotation;
     
     private void Start()
@@ -16,6 +17,6 @@ public class SpinRandom : MonoBehaviour
 
     private void Update()
     {
-        transform.Rotate(randomVectorRotation * Time.deltaTime);
+        transform.Rotate(randomVectorRotation * rotationSpeed * Time.deltaTime);
     }
 }

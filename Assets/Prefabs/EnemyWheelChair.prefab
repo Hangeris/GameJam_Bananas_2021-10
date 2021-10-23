@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1763270890}
-  moveSpeed: 500
+  moveSpeed: 400
 --- !u!114 &1763270892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,8 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleAmount: 1
-  randomAdditionalScale: 0.5
-  scaleUpDuration: 0.4
+  randomAdditionalScale: 2
+  scaleUpDuration: 1
   easeTypes: 060000001e00000018000000
 --- !u!114 &798555138184921189
 MonoBehaviour:
@@ -135,9 +135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc06e45b1a132a64ab4827f1778e5ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingForce: 1
+  startingForce: 3
   randomAddForce: 10
-  randomRotationDegrees: 5
+  randomRotationDegrees: 7
 --- !u!1001 &8740109464279621753
 PrefabInstance:
   m_ObjectHideFlags: 0
