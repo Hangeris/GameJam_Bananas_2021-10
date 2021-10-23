@@ -70,5 +70,10 @@ public class Player : MonoBehaviour
     {
         health--;
         OnPlayerDamaged.Invoke(health);
+
+        if (health <= -0)
+        {
+            EventManager.PlayerDie();
+        }
     }
 }

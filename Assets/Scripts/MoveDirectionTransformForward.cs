@@ -6,6 +6,6 @@ public class MoveDirectionTransformForward : MonoBehaviour, IMoveDirection
 {
     public Vector3 FindDirection()
     {
-        return transform.forward;
+        return transform.forward.normalized;
     }
 }

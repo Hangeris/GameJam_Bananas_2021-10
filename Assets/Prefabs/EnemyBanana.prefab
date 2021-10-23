@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1897488401629140716}
   - component: {fileID: 5308966664275876434}
   - component: {fileID: 5888635344998484779}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 6802659822229041773}
   - component: {fileID: 4572880511053127907}
   - component: {fileID: -1919774713425330420}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EnemyBanana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
