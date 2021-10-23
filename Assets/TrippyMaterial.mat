@@ -135,7 +135,7 @@ Material:
     - _ZWrite: 1
     - _ZWriteControl: 0
     - _speed: 0.2
-    - _trippyOpacity: 0.64
+    - _trippyOpacity: 0.05
     - _trippySpeed: 0.1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
