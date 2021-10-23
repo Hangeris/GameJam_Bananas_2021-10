@@ -75,5 +75,10 @@ public class Player : MonoBehaviour
         health--;
         audioSource.PlayOneShot(hurtAudioClip);
         OnPlayerDamaged.Invoke(health);
+
+        if (health <= -0)
+        {
+            EventManager.PlayerDie();
+        }
     }
 }

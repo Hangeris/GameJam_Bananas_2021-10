@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
+    public static Vector3 EnemyMoveDirection = -Vector3.forward;
     
     private void OnEnable()
     {
