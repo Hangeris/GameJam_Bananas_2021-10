@@ -108,6 +108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ea639bb43a97e43af9604842dfce30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scaleAmount: 1
+  randomAdditionalScale: 1
   scaleUpDuration: 0.4
   easeTypes: 060000001e00000018000000
 --- !u!114 &2344444671937718841
@@ -134,7 +136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc06e45b1a132a64ab4827f1778e5ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceAmount: 5
+  startingForce: 3
+  randomAddForce: 5
+  randomRotationDegrees: 5
 --- !u!1001 &4028450988362946052
 PrefabInstance:
   m_ObjectHideFlags: 0

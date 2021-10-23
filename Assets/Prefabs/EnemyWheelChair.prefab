@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scaleAmount: 1
-  randomAdditionalScale: 0
+  randomAdditionalScale: 0.5
   scaleUpDuration: 0.4
   easeTypes: 060000001e00000018000000
 --- !u!114 &798555138184921189
