@@ -868,6 +868,7 @@ GameObject:
   - component: {fileID: 1088102628}
   - component: {fileID: 1088102627}
   - component: {fileID: 1088102626}
+  - component: {fileID: 1088102629}
   m_Layer: 5
   m_Name: StartGameButton
   m_TagString: Untagged
@@ -991,6 +992,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088102624}
   m_CullTransparentMesh: 1
+--- !u!114 &1088102629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088102624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a429359ea1defac488e54e334857c8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverScale: 1.2
+  hoverTime: 0.3
 --- !u!1 &1202334616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1375,6 +1390,7 @@ GameObject:
   - component: {fileID: 1972106753}
   - component: {fileID: 1972106752}
   - component: {fileID: 1972106751}
+  - component: {fileID: 1972106754}
   m_Layer: 5
   m_Name: EndGameButton
   m_TagString: Untagged
@@ -1498,3 +1514,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1972106749}
   m_CullTransparentMesh: 1
+--- !u!114 &1972106754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972106749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a429359ea1defac488e54e334857c8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverScale: 1.2
+  hoverTime: 0.3
